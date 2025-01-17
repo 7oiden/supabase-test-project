@@ -56,10 +56,6 @@ const Create = () => {
     }
   };
 
-  if (!userId) {
-    navigate("/");
-  }
-
   return (
     <div className="page create">
       {userId ? (
