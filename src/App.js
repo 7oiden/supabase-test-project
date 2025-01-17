@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import supabase from "./config/supabaseClient";
+import { useNavigate } from "react-router-dom";
 
 // pages
 import Home from "./pages/Home";
@@ -11,6 +12,8 @@ import { useState, useEffect } from "react";
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [username, setUsername] = useState(null);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     const checkUser = async () => {
@@ -40,6 +43,7 @@ function App() {
     } catch (error) {
       console.log("Error signing out:", error);
     }
+    navigate("/");
     // setUsername(null);
   };
 
