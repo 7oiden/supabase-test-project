@@ -141,3 +141,28 @@ form button {
   color: red;
   font-size: 0.875em;
 }
+
+.welcome-wrapper,
+.create-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-wrapper p {
+  text-align: center;
+  margin-top: 2rem;
+  background: var(--primary);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  color: white;
+}
+
+.create-wrapper p {
+  text-align: center;
+  margin-top: 2rem;
+  background: rgb(220, 44, 0);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  color: white;
+}

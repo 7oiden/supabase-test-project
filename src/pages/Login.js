@@ -29,6 +29,10 @@ export default function Login() {
       />
     );
   } else {
-    return <div>Welcome, you are now logged in!</div>;
+    return (
+      <div className="welcome-wrapper">
+        <p>Welcome, you are now logged in!</p>
+      </div>
+    );
   }
 }

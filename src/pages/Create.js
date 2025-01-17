@@ -88,7 +88,9 @@ const Create = () => {
           {formError && <p className="error">{formError}</p>}
         </form>
       ) : (
-        <p>Please log in to create a smoothie.</p>
+        <div className="create-wrapper">
+          <p>Please log in to create a smoothie.</p>
+        </div>
       )}
     </div>
   );
